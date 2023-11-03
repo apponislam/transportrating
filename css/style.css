@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo',
+        sans-serif;
+}
+
+/* Header */
+
+.headermain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 218px;
+    margin: 80px;
+    margin-top: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.backlogo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.backlogo img {
+    width: 100%;
+}
+
+.logo img {
+    width: 290px;
+}
+
+.langlogo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.langlogo img {
+    width: 100%;
+}
+
+/* Main */
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.heroarea {
+    width: 845px;
+    padding: 50px 108px;
+    margin-bottom: 80px;
+    border-radius: 22px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
+    border: solid 6px #897450;
+    background-color: #fff;
+}
+
+.heroarea h1 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.heroarea p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(60, 60, 67, 0.6);
+    margin-bottom: 40px;
+}
+
+
+
+
+/* Rating */
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating label i {
+    font-size: 30px;
+    color: #f3f3f3;
+    margin: 0 12px;
+    /* Adjust the size as needed */
+}
+
+.rating label:hover~label i,
+.rating label:hover i {
+    color: #897450;
+    /* Highlight color on hover */
+}
+
+.rating input:checked~label i {
+    color: #897450;
+    /* Highlight color for selected stars */
+}
+
+.rating span {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(60, 60, 67, 0.6);
+}
+
+.spanstart {
+    position: absolute;
+    bottom: -20px;
+    left: 21%;
+    width: 125px;
+    text-align: center;
+}
+
+.spanend {
+    position: absolute;
+    bottom: -20px;
+    right: 21%;
+    width: 125px;
+    text-align: center;
+}
+
+/* Rating end */
+
+.textbox {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.textbox textarea {
+    font-family: 'Cairo',
+        sans-serif;
+    width: 100%;
+    height: 324px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    padding: 24px;
+    padding-top: 55px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+}
+
+.textbox textarea:focus {
+    outline: #897450 auto 1px;
+}
+
+.textbox span {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(60, 60, 67, 0.6);
+}
+
+.sendbtn {
+    width: 100%;
+    border: none;
+    padding: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 12px;
+    background-color: #897450;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width:1400px) {
+
+    /* header */
+
+    .headermain {
+        padding: 22px 180px;
+        margin: 80px;
+        margin-top: 0;
+    }
+
+    /* main */
+
+}
+
+
+@media screen and (max-width:1300px) {
+
+    /* header */
+
+    .headermain {
+        padding: 22px 136px;
+        margin: 80px;
+        margin-top: 0;
+    }
+
+    /* main */
+
+}
+
+
+@media screen and (max-width:991px) {
+
+    /* header */
+
+    .headermain {
+        padding: 22px 90px;
+        margin: 80px;
+        margin-top: 0;
+    }
+
+
+    /* main */
+
+    .heroarea {
+        width: 650px;
+        padding: 30px;
+        margin-bottom: 80px;
+        border: solid 6px #897450;
+    }
+
+    .textbox textarea {
+        width: 100%;
+        height: 200px;
+        padding: 24px;
+        padding-top: 55px;
+    }
+
+    .spanstart {
+        bottom: -20px;
+        left: 19%;
+        width: 125px;
+    }
+
+    .spanend {
+        bottom: -20px;
+        right: 19%;
+        width: 125px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    /* header */
+
+    .headermain {
+        padding: 22px 40px;
+        margin: 80px;
+        margin-top: 0;
+    }
+
+    .logo img {
+        width: 240px;
+    }
+
+    /* main */
+
+    .heroarea {
+        width: 530px;
+        padding: 24px;
+        margin-bottom: 80px;
+        border: solid 6px #897450;
+    }
+
+    .spanstart {
+        bottom: -20px;
+        left: 12%;
+        width: 125px;
+    }
+
+    .spanend {
+        bottom: -20px;
+        right: 12%;
+        width: 125px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    /* header */
+
+    .headermain {
+        padding: 30px 16px;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .logo img {
+        width: 210px;
+    }
+
+    /* main */
+
+    .heroarea {
+        width: 345px;
+        padding: 16px;
+        margin-bottom: 24px;
+        border: solid 6px #897450;
+    }
+
+    .heroarea h1 {
+        font-size: 20px;
+    }
+
+    .heroarea p {
+        margin-bottom: 16px;
+    }
+
+    .rating label i {
+        font-size: 30px;
+        margin: 0 8px;
+    }
+
+    .spanstart {
+        bottom: -45px;
+        left: 5%;
+        width: 65px;
+    }
+
+    .spanend {
+        bottom: -45px;
+        right: 7%;
+        width: 56px;
+    }
+
+    .textbox {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .textbox textarea {
+        width: 100%;
+        height: 136px;
+        padding: 24px;
+        padding-top: 55px;
+    }
+
+}

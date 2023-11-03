@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <div class="headermain">
+            <div class="backlogo">
+                <img src="img/close.svg">
+            </div>
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="langlogo">
+                <img src="img/langar.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+
+    <section>
+        <div class="main">
+            <div class="heroarea">
+                <h1>What do you think of our services?</h1>
+                <p>In general, what is your satisfaction with your use of the service?</p>
+
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1"><i class="fas fa-star"></i></label>
+                    <span class="spanstart">Not satisfied at all</span>
+                    <span class="spanend">Very satisfied</span>
+                </div>
+
+                <div class="textbox">
+                    <textarea name="" id=""></textarea>
+                    <span>Any Addition comments</span>
+                </div>
+
+                <button class="sendbtn">Send</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        const ratingInputs = document.querySelectorAll('.rating input');
+
+        ratingInputs.forEach((input) => {
+            input.addEventListener('change', (e) => {
+                const rating = e.target.value;
+                // alert(`You rated it ${rating} stars.`);
+            });
+        });
+    </script>
+</body>
+
+</html>
